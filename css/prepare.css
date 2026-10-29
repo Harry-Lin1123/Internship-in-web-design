@@ -1,0 +1,259 @@
+/* p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding: 10px;
+} */
+/* about */
+body {
+    margin: 0;
+    padding-top: 5rem;
+    font-family: '微軟正黑體', 'Microsoft JhengHei', 'Arial';
+    font-size: 18px;
+    background-color: #F5F5F5;
+    /*overflow-y: scroll;
+      強制移除水平scroll bar可以解決header放大空白問題，但是不友善
+      overflow-x: hidden;*/
+}
+@media (max-width:1000px) {
+    body {
+        margin: 0;
+        padding-top: 5rem;
+        font-family: '微軟正黑體', 'Microsoft JhengHei', 'Arial';
+        font-size: 16px;
+        background-color: #F5F5F5;
+        /*overflow-y: scroll;
+          強制移除水平scroll bar可以解決header放大空白問題，但是不友善
+          overflow-x: hidden;*/
+    }
+}
+ul{
+    padding-left: 24px;
+}
+.Title{
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 40px;
+}
+.ContentTitle{
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 40px;
+  }
+  .contentBoxTitle{
+    font-size: 24px;
+    font-weight: bolder;
+    
+}
+@media (max-width:1000px) {
+    .Title{
+        font-size: 26px;
+        font-weight: bold;
+        line-height: 40px;
+    }
+    .ContentTitle{
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 40px;
+      }
+      .contentBoxTitle{
+        font-size: 20px;
+        font-weight: bolder;
+        
+    }
+}
+
+
+/* 這每個區塊應該都有 */
+.contentBox{
+    /* padding: 0 20px; */
+    /* font-size: 1rem; */
+    line-height: 2rem;
+    letter-spacing: 0.8px;
+    
+}
+@media (max-width:1200px) {
+    .contentBox{
+        /* padding: 0 20px; */
+        /* font-size: 1rem; */
+        line-height: 1.5rem;
+        letter-spacing: 0.8px;
+        
+    }
+
+}
+
+.tite hr{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#pre3Content .price th,#pre3Content .price td{
+    padding: 5px 15px;
+    border: #ececec 2px solid;
+}
+#pre3Content .price th{
+    background: #005d88;
+    color: white;
+}
+#pre3Content .price td{
+    color: #6b6b6b;
+    background: rgb(223, 223, 223);
+}
+
+
+
+
+
+
+
+  .progressbar-wrap {
+    width: 100%;
+    display: table;
+    margin: 30px 0 50px 0;
+    font-family: 'Arial';
+  }
+  .progressbar-wrap .progressbar-group {
+    position: relative;
+    /*每個group以表格欄位方式排列顯示，每個group參照自己所屬的position位置*/
+    display: table-cell;
+  }
+  /*步驟圓形標題 - 預設(未完成)步驟*/
+  .progressbar-wrap .progressbar-group .title {
+    position: absolute;
+    left: -4px;
+    top: -9px;
+    width: 40px;
+    line-height: 40px;
+    border: 2px solid #FFF;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #848484;
+    color: #FFF;
+    font-size: 24px;
+    z-index: 2;
+  }
+  /*步驟圓形標題 - 已完成步驟*/
+  .progressbar-wrap .progressbar-group .done {
+    background-color: #10638a;
+  }
+  /*步驟圓形標題 - 目前的步驟*/
+  .progressbar-wrap .progressbar-group .active {
+    background-color: #ff3131;
+  }
+  /*步驟說明文字*/
+  .progressbar-wrap .progressbar-group .text {
+    position: absolute;
+    top: 0;
+    left: 41px;
+    height: 24px;
+    line-height: 24px;
+    /* font-size: 13px; */
+    color: #FFF;
+  }
+  /*步驟進度值包覆容器*/
+  .progressbar-wrap .progressbar-group .progress {
+    background-color: #BEBEBE;
+    /* background-color: #636262; */
+    color: #333333;
+    position: absolute;
+    left: 0;
+    /*高度垂直置中*/
+    top: 50%;
+    /*寬度符合自己的group容器*/
+    width: 100%;
+    height: 24px;
+    /* z-index: -1; */
+  }
+  /*步驟進度值 - 預設(未完成)步驟*/
+  .progressbar-wrap .progressbar-group .progress .value {
+    /*無進度動畫，不需要寬度*/
+    /*width: 0;*/
+    height: 24px;
+    background-color: #BDBDBD;
+  }
+  /*步驟進度值 - 預設(未完成)步驟*/
+  .progressbar-wrap .progressbar-group .progress .done {
+    /* 無進度動畫，不需要寬度 */
+    /* width: 0; */
+    height: 24px;
+    /* background-color: #45A19A; */
+    background-color: #10638a;
+    
+  }
+  /*步驟進度值 - 預設(未完成)步驟*/
+  .progressbar-wrap .progressbar-group .progress .active {
+    /*顯示進度動畫，寬度設定為0*/
+    width: 0;
+    height: 24px;
+    /* background-color: #FF8B52; */
+    background-color: #ff3131;
+  }
+
+
+
+
+
+
+
+  input[type=button].btnform-submit {
+    display: inline-block;
+    width: 100%;
+    /* min-width: 20%; */
+    min-width: 120px;
+    padding: 12px 0;
+    margin: 5px 0% 5px;
+    border: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    outline: 0;
+    background: linear-gradient(180deg, #F5515F 0%, #9F041B 100%);
+    font-size: 16px;
+    color: #FFF;
+    cursor: pointer;
+}
+input[type=button].btnform-submit:hover {
+    background: linear-gradient(180deg, #F5515F 10%, #F5515F 10%);
+}
+/* 上一步 */
+input[type=button].btnform-cancel, input[type=button].btnform-previous {
+    display: inline-block;
+    width: 100%;
+    /* min-width: 20%; */
+    min-width: 120px;
+    padding: 12px 0;
+    margin: 5px 0% 5px;
+    border: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    outline: 0;
+    /* background-color: #848484; */
+    background: linear-gradient(180deg, #848484 0%, #848484 0%);
+    font-size: 16px;
+    color: #FFF;
+    cursor: pointer;
+}
+/* 下一步 */
+input[type=button].btnform-enter {
+    display: inline-block;
+    width: 100%;
+    /* min-width: 20%; */
+    min-width: 120px;
+    padding: 12px 0;
+    margin: 5px 0% 5px;
+    border: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    outline: 0;
+    /* background: linear-gradient(180deg, #F5515F 0%, #9F041B 100%); */
+    background: linear-gradient(180deg, #4CA7A7 0%, #007d7d 100%);
+    font-size: 16px;
+    color: #FFF;
+    cursor: pointer;
+}
+input[type=button].btnform-enter:hover {
+    background: linear-gradient(180deg, #46A4A4 10%, #46A4A4 10%);
+}

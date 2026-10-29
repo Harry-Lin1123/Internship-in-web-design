@@ -1,0 +1,108 @@
+/* p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding: 10px;
+} */
+/* about */
+body {
+    margin: 0;
+    padding-top: 5rem;
+    font-family: '微軟正黑體', 'Microsoft JhengHei', 'Arial';
+    font-size: 18px;
+    background-color: #F5F5F5;
+    /*overflow-y: scroll;
+      強制移除水平scroll bar可以解決header放大空白問題，但是不友善
+      overflow-x: hidden;*/
+}
+@media (max-width:1000px) {
+    body {
+        margin: 0;
+        padding-top: 5rem;
+        font-family: '微軟正黑體', 'Microsoft JhengHei', 'Arial';
+        font-size: 15px;
+        background-color: #F5F5F5;
+        /*overflow-y: scroll;
+          強制移除水平scroll bar可以解決header放大空白問題，但是不友善
+          overflow-x: hidden;*/
+    }
+}
+
+ul{
+    padding-left: 24px;
+}
+.Title{
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 40px;
+}
+.ContentTitle{
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 40px;
+  }
+  .contentBoxTitle{
+    font-size: 24px;
+    font-weight: bolder;
+    
+}
+@media (max-width:1000px) {
+    .Title{
+        font-size: 26px;
+        font-weight: bold;
+        line-height: 40px;
+    }
+    .ContentTitle{
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 40px;
+      }
+      .contentBoxTitle{
+        font-size: 18px;
+        font-weight: bolder;
+        
+    }
+}
+.number{
+    font-size: 35px;
+}
+@media (max-width:767px) {
+    .number{
+        font-size: 29px;
+    }
+}
+.changeTitle{
+    color: #FF5918;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+}
+a.changeTitle:hover{
+    color: #FF5918;
+}
+@media (max-width:1000px) {
+    .changeTitledown{
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+    }
+}
+
+/* 這每個區塊應該都有 */
+.contentBox{
+    /* padding: 0 20px; */
+    /* font-size: 1rem; */
+    line-height: 2rem;
+    letter-spacing: 0.8px;
+    
+}
+
+
+@media (max-width:1200px) {
+    .contentBox{
+        /* padding: 0 20px; */
+        /* font-size: 1rem; */
+        line-height: 1.5rem;
+        letter-spacing: 0.8px;
+        
+    }
+}

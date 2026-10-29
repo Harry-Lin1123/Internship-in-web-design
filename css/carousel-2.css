@@ -1,0 +1,210 @@
+/* area */
+@media (min-width: 768px) {
+    #area .carouselPrograms .carousel-item {
+
+        margin-right: 0;
+    
+    }
+    /* show 3 items */
+    #area .carouselPrograms .carousel-inner .active,
+    #area .carouselPrograms .carousel-inner .active + .carousel-item,
+    #area .carouselPrograms .carousel-inner .active + .carousel-item + .carousel-item {
+        display: block;
+    }
+  
+    #area .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    #area .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    #area .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+        transition: none;
+    }
+  
+    #area .carouselPrograms .carousel-inner .carousel-item-next,
+    #area .carouselPrograms .carousel-inner .carousel-item-prev {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+  
+    #area .carouselPrograms .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -33.333%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+  
+    /* left or forward direction */
+    #area .carouselPrograms .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    #area .carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item,
+    #area .carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    #area .carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+  
+    /* farthest right hidden item must be abso position for animations */
+    #area .carouselPrograms .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+  
+    /* right or prev direction */
+    #area .carouselPrograms .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    #area .carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item,
+    #area .carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    #area .carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+  }
+/* shop */
+@media (min-width: 768px) {
+    #shop .carouselPrograms .carousel-item {
+
+        margin-right: 0;
+    
+    }
+    /* show 3 items */
+    #shop .carouselPrograms .carousel-inner .active,
+    #shop .carouselPrograms .carousel-inner .active + .carousel-item,
+    #shop .carouselPrograms .carousel-inner .active + .carousel-item + .carousel-item {
+        display: block;
+    }
+  
+    #shop .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    #shop .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    #shop .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+        transition: none;
+    }
+  
+    #shop .carouselPrograms .carousel-inner .carousel-item-next,
+    #shop .carouselPrograms .carousel-inner .carousel-item-prev {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+  
+    #shop .carouselPrograms .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -33.333%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+  
+    /* left or forward direction */
+    #shop .carouselPrograms .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    #shop .carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item,
+    #shop .carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    #shop .carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+  
+    /* farthest right hidden item must be abso position for animations */
+    #shop .carouselPrograms .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+  
+    /* right or prev direction */
+    #shop .carouselPrograms .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    #shop .carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item,
+    #shop .carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    #shop .carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+  }
+/* place 1*/
+@media (min-width: 768px) {
+    #myTabContent .carouselPrograms .carousel-item {
+
+        margin-right: 0;
+    
+    }
+    /* show 4 items */
+    #myTabContent .carouselPrograms .carousel-inner .active,
+    #myTabContent .carouselPrograms .carousel-inner .active + .carousel-item,
+    #myTabContent .carouselPrograms .carousel-inner .active + .carousel-item + .carousel-item,
+    #myTabContent .carouselPrograms .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+        display: block;
+    }
+  
+    #myTabContent .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    #myTabContent .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    #myTabContent .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+    #myTabContent .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+        transition: none;
+    }
+  
+    #myTabContent .carouselPrograms .carousel-inner .carousel-item-next,
+    #myTabContent .carouselPrograms .carousel-inner .carousel-item-prev {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+  
+    #myTabContent .carouselPrograms .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+  
+    /* left or forward direction */
+    #myTabContent .carouselPrograms .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    #myTabContent .carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item,
+    #myTabContent .carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    #myTabContent .carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+    #myTabContent .carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+  
+    /* farthest right hidden item must be abso position for animations */
+    #myTabContent .carouselPrograms .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+  
+    /* right or prev direction */
+    #myTabContent .carouselPrograms .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    #myTabContent .carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item,
+    #myTabContent .carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    #myTabContent .carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item ,
+    #myTabContent .carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(50%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+  }
+
+/* place 2*/

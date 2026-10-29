@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>切換區塊</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    
+  <style>
+    .container {
+      display: flex;
+      width: 400px;
+      height: 200px;
+      gap: 10px;
+    }
+    .box {
+      flex: 1;
+      background-color: lightblue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div id="boxA" class="box">A</div>
+  <div id="boxB" class="box">B</div>
+</div>
+
+<script>
+  let active = null;
+
+  $(".box").click(function () {
+    const clicked = $(this).attr("id");
+    const other = clicked === "boxA" ? "#boxB" : "#boxA";
+
+    if (active === clicked) {
+      // 再次點擊同一個，恢復兩個都顯示
+      $(".box").removeClass("hidden");
+      active = null;
+    } else {
+      // 隱藏另一個，但不改變順序
+      $(other).addClass("hidden");
+      $("#" + clicked).removeClass("hidden");
+      active = clicked;
+    }
+  });
+</script>
+
+</body>
+</html>
+
